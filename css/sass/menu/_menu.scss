@@ -1,14 +1,25 @@
-nav{
-    background-color:red;
-    height: 100%;
-    padding: 2% 0;
-    ul li {
-        color:blue;
-        text-transform: uppercase;
-        list-style: none;
-        font-weight: 900;
-        text-align: center;
-        font-family: Lato, sans-serif;
-        margin:15px 0;
+header.header-parent{
+    position: fixed;
+    nav{
+        background-color:red;
+        height: 100vh;
+        padding: 2% 0;
+        ul{
+            li {
+                color:blue;
+                text-transform: uppercase;
+                list-style: none;
+                font-weight: 900;
+                text-align: center;
+                font-family: Lato, sans-serif;
+                margin:15px 0;
+                font-size: 14px;
+            }
+        }
     }
+}
+
+div.header-child{
+    visibility: hidden;
+    opacity: 0;
 }

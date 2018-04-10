@@ -1,13 +1,13 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/main.css"/>
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="col-3">
+    <header class="col-3 header-parent">
         <nav class="col-12">
             <ul>
                 <li>Accueil</li>
@@ -17,10 +17,44 @@
             </ul>
         </nav>
     </header>
+    <div class="col-3 header-child">l</div>
     <div class="col-9 container-content">
-        <div class="col-10 marg-2 about">
-            lol
+
+        <div class="col-12 tuto">
+           <h1>Welcome</h1>
+           <br/>
+           <h2>Get started</h2>
+           <h3>How to use</h3>
+           <ul>
+               <li>Use the keywords menu to show the differents parts :
+                   <ol>
+                       <li>Skills</li>
+                       <li>Projects</li>
+                       <li>Contact</li>
+                       <li>About</li>
+                   </ol>
+               </li>
+               <li>Type a keywords in the console log input or click one in the menu</li>
+               <li>Enjoy your visit !</li>
+           </ul>
+        </div>
+
+        <div class="col-12 input-console">
+            console.log{ <input id="inputText" class="inpt" type="text"/> };<input class="btn" onclick="consoleLog()" type="button" value="RUN >"/>
+        </div>
+
+        <div class="col-12 render-console">
+            <p>
+                valentinleymonie@DESKTOP-27ATGFH MINGW64 /C/VALENTIN/Portfolio (dev) :<br/>
+                    <br/>
+                <div class="render-terminal">
+                    lol
+                </div>
+
+            </p>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
