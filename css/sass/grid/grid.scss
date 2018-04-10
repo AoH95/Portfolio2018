@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+$gutters :30px;
+$space:1%;
+
+.line{
+    clear:left;
+}
+
+[class^="col-"]{
+    float: left;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} { 
+        width: 100% / 12 * $i;
+    }
+}
+
+@for $y from 1 through 12{
+    .marg-#{$y}{
+        margin: 0 (100% / 24 * $y);
+    }
+}
