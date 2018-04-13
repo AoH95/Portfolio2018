@@ -31,4 +31,9 @@ div.input-console{
 div.render-console{
     padding:3%;
     background-color:blue;
+    div.render-terminal{
+        span.tiret{
+            color:blue;
+        }
+    }
 }

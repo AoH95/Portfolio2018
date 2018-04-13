@@ -23,7 +23,7 @@ function consoleLog(){
         case 'Compétence':
         case 'Competences':
         case 'Competence':
-        var contenu = "prout";
+        var contenu = "class Competences {<br/><span class='tiret' style='color:blue'>______</span>constructor(skill){<br/><span class='tiret' style='color:blue'>____________</span>this.skill = {<br/><span class='tiret' style='color:blue'>__________________</span>'php' : 40%,<br/><span class='tiret' style='color:blue'>__________________</span>'js' : 50%,<br/><span class='tiret' style='color:blue'>__________________</span>'html' : 85%,<br/><span class='tiret' style='color:blue'>__________________</span>'css' : 85%,<br/><span class='tiret' style='color:blue'>__________________</span>'sass' : 70%,<br/><span class='tiret' style='color:blue'>__________________</span>'twig' : 90%,<br/><span class='tiret' style='color:blue'>__________________</span>'json' : 80%,<br/><span class='tiret' style='color:blue'>__________________</span>'symfony' : 40%,<br/><span class='tiret' style='color:blue'>__________________</span>'react' : 15%<br/><span class='tiret' style='color:blue'>____________</span>};<br/><span class='tiret' style='color:blue'>______</span>}<br/><br/><span class='tiret' style='color:blue'>______</span>get skillsLevel(){<br/><span class='tiret' style='color:blue'>____________</span>return renderLevel();<br/><span class='tiret' style='color:blue'>______</span>}<br/><br/><span class='tiret' style='color:blue'>______</span>renderLevel(){<br/><span class='tiret' style='color:blue'>____________</span>return this.skill;<br/><span class='tiret' style='color:blue'>______</span>}<br/> }<br/><br/>const Valentin2018 = new Competences(skill);<br/><br/>console.log(Valentin2018.skillsLevel);";
         ajaxRender(contenu);
         break;
 
@@ -31,7 +31,7 @@ function consoleLog(){
         case 'Project':
         case 'Projets':
         case 'Projet':
-        var contenu = "prout1";
+        var contenu = "Projects.json<br/><br/>{<br/>'titre projet':'Projet Fédération Française de Roller Sports',<br/> 'context':'Projet de premier semestre de 3ème année à l'ICAN à Paris (75),<br/> 'tech':'Symfony 4.0, TWIG, HTML, CSS/SASS, JS, Jquery, SQL',<br/>'screen':' '<br/>}";
         ajaxRender(contenu);
         break;
 
@@ -68,3 +68,6 @@ function consoleLog(){
     }
 
 }
+
+elem = document.querySelectorAll("php");
+console.log(elem);
