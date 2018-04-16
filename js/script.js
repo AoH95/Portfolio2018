@@ -31,20 +31,20 @@ function consoleLog(){
         case 'Project':
         case 'Projets':
         case 'Projet':
-        var contenu = "Projects.json<br/><br/>{<br/>'titre projet':'Projet Fédération Française de Roller Sports',<br/> 'context':'Projet de premier semestre de 3ème année à l'ICAN à Paris (75),<br/> 'tech':'Symfony 4.0, TWIG, HTML, CSS/SASS, JS, Jquery, SQL',<br/>'screen':' '<br/>}";
+        var contenu = "{<br/>Projects.json :{<br/><span class='tiret' style='color:blue'>______</span>Project #1 :{<br/><span class='tiret' style='color:blue'>_________</span>'titre projet':'Projet Hackathon',<br/><span class='tiret' style='color:blue'>_________</span>'context':'Projet réalisé pour un hackathon avec le réseau GES (ICAN),<br/><span class='tiret' style='color:blue'>_________</span>'tech':'Laravel, TWIG, HTML, CSS, JS, Jquery',<br/><span class='tiret' style='color:blue'>_________</span>'screen': <button>CLICK HERE</button><br/><span class='tiret' style='color:blue'>______</span>},<br/><span class='tiret' style='color:blue'>______</span>Project #2 :{<br/><span class='tiret' style='color:blue'>_________</span>'titre projet':'Projet Fédération Française de Roller Sports',<br/><span class='tiret' style='color:blue'>_________</span>'context':'Projet de premier semestre de 3ème année à l'ICAN à Paris (75),<br/><span class='tiret' style='color:blue'>_________</span>'tech':'Symfony 4.0, TWIG, HTML, CSS/SASS, JS, Jquery, SQL',<br/><span class='tiret' style='color:blue'>_________</span>'link': <a href='https://www.ffroller.valentin-leymonie.fr/'>CLICK HERE</a><br/><span class='tiret' style='color:blue'>______</span>},<br/><span class='tiret' style='color:blue'>______</span>Project #3 :{<br/><span class='tiret' style='color:blue'>_________</span>'titre projet':'Projet Bot ICAN',<br/><span class='tiret' style='color:blue'>_________</span>'context':'Projet de second semestre de 3ème année à l'ICAN à Paris (75),<br/><span class='tiret' style='color:blue'>_________</span>'tech':'Symfony 4.0, ReactJS, TWIG, HTML, CSS/SASS, JS, Jquery',<br/><span class='tiret' style='color:blue'>_________</span>'screen': <button>CLICK HERE</button><br/><span class='tiret' style='color:blue'>______</span>}<br/><span class='tiret' style='color:blue'>___</span>}<br/>}";
         ajaxRender(contenu);
         break;
 
         case 'Contact':
         case 'Contact me':
         case 'Find me':
-        var contenu = "prout2";
+        var contenu = "{% if work == true OR question == true  %}<br/><span class='tiret' style='color:blue'>______</span>{% set valentinPhone = 06 17 55 77 52 %}<br/><span class='tiret' style='color:blue'>_________</span>{{ valentinPhone }}<br/><span class='tiret' style='color:blue'>______</span>{% set valentinMail = valentin.leymonie.es@gmail.com %}<br/><span class='tiret' style='color:blue'>_________</span>{{ valentinMail }}<br/>{% elseif %}<br/><span class='tiret' style='color:blue'>______</span>{{ It's will be a pleasure to read you ! }}<br/>{% endif %}";
         ajaxRender(contenu);
         break;
 
         case 'About':
         case 'A propos':
-        var contenu = "prout3";
+        var contenu = "<span class='tiret' style='color:blue'>______</span>- echo ('Prochainement diplomé, actuellement en 3ème de licence Web Design à l'ICAN (Paris), je suis à la recherche d'une alternance dans le but de la préparation de mon Master Développement mobile & IoT à YNOV (Nanterre). Je suis à la recherche d'un poste dans le développement mobile ou en développeur Front-End.');"
         ajaxRender(contenu);
         break;
 
@@ -69,5 +69,3 @@ function consoleLog(){
 
 }
 
-elem = document.querySelectorAll("php");
-console.log(elem);

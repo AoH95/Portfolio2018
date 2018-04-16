@@ -84,43 +84,93 @@
 header.header-parent {
   position: fixed; }
   header.header-parent nav {
-    background-color: red;
+    background-color: #28282b;
+    border-right: 1px solid #FFFFFF;
     height: 100vh;
     padding: 2% 0; }
-    header.header-parent nav ul li {
-      color: blue;
-      text-transform: uppercase;
-      list-style: none;
-      font-weight: 900;
-      text-align: center;
-      font-family: Lato, sans-serif;
-      margin: 15px 0;
-      font-size: 14px; }
+    header.header-parent nav ul {
+      margin-top: 40vh; }
+      header.header-parent nav ul li {
+        color: #8D8D8D;
+        text-transform: uppercase;
+        list-style: none;
+        font-weight: 300;
+        text-align: center;
+        font-size: 14px;
+        margin: 2px 15px;
+        padding: 5px 0;
+        border-bottom: 1px solid #28282b;
+        transition: 0.3s; }
+        header.header-parent nav ul li:hover {
+          border-bottom: 1px solid #FFFFFF;
+          background-color: rgba(255, 255, 255, 0.5);
+          transition: 0.3s;
+          color: #FFFFFF; }
 
 div.header-child {
   visibility: hidden;
   opacity: 0; }
 
 div.tuto {
-  background-color: green;
-  padding: 3%; }
+  background-color: #191919;
+  padding: 3%;
+  background: radial-gradient(circle farthest-corner at 200px 0, #414141, #000); }
+  div.tuto h1, div.tuto h2, div.tuto h3 {
+    color: #FFFFFF; }
   div.tuto ul {
-    margin-left: 25px; }
+    margin-left: 25px;
+    color: #C5C5C5; }
     div.tuto ul li ol li {
       list-style: none;
       margin-left: 25px; }
 
 div.input-console {
+  color: #FFFFFF;
+  background-color: #191919;
   padding: 3%;
-  display: inline-block;
-  background-color: yellow; }
+  display: inline-block; }
   div.input-console input {
     padding: 3px; }
   div.input-console input.btn {
-    margin-left: 15px; }
+    margin-left: 15px;
+    background: none;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 5px;
+    font-weight: 900; }
+  div.input-console input#inputText {
+    text-align: center;
+    width: 17%;
+    border: none;
+    border-bottom: 2px solid red;
+    background: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase; }
 
 div.render-console {
+  color: #FFFFFF;
   padding: 3%;
-  background-color: blue; }
+  background-color: #28282b; }
+  div.render-console div.render-terminal span.tiret {
+    color: #28282b; }
+
+.green {
+  color: #0dbc79; }
+
+.purple {
+  color: #9b3fbc; }
+
+.yellow {
+  color: #e5e510; }
+
+.blue {
+  color: #13a8b9; }
+
+body {
+  background-color: #8D8D8D; }
+
+* {
+  font-family: 'Lato', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

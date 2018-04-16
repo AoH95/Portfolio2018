@@ -1,19 +1,29 @@
 header.header-parent{
     position: fixed;
     nav{
-        background-color:red;
+        background-color:$lblack;
+        border-right: 1px solid$white;
         height: 100vh;
         padding: 2% 0;
         ul{
+            margin-top: 40vh;
             li {
-                color:blue;
+                color:#8D8D8D;
                 text-transform: uppercase;
                 list-style: none;
-                font-weight: 900;
+                font-weight: 300;
                 text-align: center;
-                font-family: Lato, sans-serif;
-                margin:15px 0;
                 font-size: 14px;
+                margin: 2px 15px;
+                padding: 5px 0;
+                border-bottom: 1px solid #28282b;
+                transition:0.3s;
+                &:hover{
+                    border-bottom: 1px solid $white;
+                    background-color:rgba(255,255,255,0.5);
+                    transition:0.3s;
+                    color:$white
+                }
             }
         }
     }

@@ -1,8 +1,11 @@
 div.tuto{
-    background-color:green;
+    background-color:$black;
     padding:3%;
+    background: radial-gradient(circle farthest-corner at 200px 0, #414141, #000);
+    h1,h2,h3{ color:$white; }
     ul{
         margin-left:25px;
+        color:#C5C5C5;
         li{
             ol{
                 li{
@@ -15,9 +18,10 @@ div.tuto{
 }
 
 div.input-console{
+    color: $white;
+    background-color:$black;
     padding:3%;
     display: inline-block;
-    background-color:yellow;
     input{
         padding:3px;
     }
@@ -25,15 +29,45 @@ div.input-console{
     }
     input.btn{
         margin-left:15px;
+        background:none;
+        border:2px solid $white;
+        color:$white;
+        padding:5px;
+        font-weight: 900;
+    }
+    input#inputText{
+        text-align: center;
+        width: 17%;
+        border:none;
+        border-bottom: 2px solid red;
+        background: none;
+        color:$white;
+        font-size: 20px;
+        text-transform: uppercase;
     }
 }
 
 div.render-console{
+    color:$white;
     padding:3%;
-    background-color:blue;
+    background-color:$lblack;
     div.render-terminal{
         span.tiret{
-            color:blue;
+            color:$lblack;
         }
     }
+}
+
+.green{
+    color:#0dbc79
+}
+.purple{
+    color:#9b3fbc;
+}
+.yellow{
+    color:#e5e510;
+}
+
+.blue{
+    color:#13a8b9;
 }

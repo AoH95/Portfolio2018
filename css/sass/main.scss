@@ -1,4 +1,13 @@
+@import "base/variable";
 @import "grid/grid";
 @import "menu/menu";
 @import "base/about";
 //@import "helpers/";
+
+body{
+    background-color:$grey;
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+}
