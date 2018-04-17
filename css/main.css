@@ -167,6 +167,27 @@ div.render-console {
 .blue {
   color: #13a8b9; }
 
+.greenConsole {
+  color: #3ac9b0; }
+
+.yellowLog {
+  color: #dcdcaa; }
+
+.blueJS {
+  color: #569cd6; }
+
+.blueJS2 {
+  color: #9cdcfe; }
+
+.orangeJS {
+  color: #c89178; }
+
+.greenJS {
+  color: #3ac9b0; }
+
+.roseRend {
+  color: #c57992; }
+
 body {
   background-color: #8D8D8D; }
 
