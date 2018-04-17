@@ -4,17 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="css/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic" rel="stylesheet"/>
     <title>Portfolio</title>
 </head>
 <body>
     <header class="col-3 header-parent">
         <nav class="col-12">
             <ul>
-                <li>Accueil</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li id="Skills" onclick="getId(this.textContent)" class="menu-li">Skills</li>
+                <li id="About" onclick="getId(this.textContent)" class="menu-li">About</li>
+                <li id="Projects" onclick="getId(this.textContent)" class="menu-li">Projects</li>
+                <li id="Contact" onclick="getId(this.textContent)" class="menu-li">Contact</li>
             </ul>
         </nav>
     </header>
@@ -36,19 +36,20 @@
                    </ol>
                </li>
                <li>Type a keywords in the console log input or click one in the menu</li>
+               <li>Press Enter or click on Run !</li>
                <li>Enjoy your visit !</li>
            </ul>
         </div>
 
         <div class="col-12 input-console">
-            <span class="greenConsole">console</span>.<span class="yellowLog">log</span>( <input id="inputText" class="inpt" type="text"/> );<input class="btn" onclick="consoleLog()" type="button" value="RUN >"/>
+            <span class="greenConsole">console</span>.<span class="yellowLog">log</span>( <input id="inputText" class="inpt" type="text"/> );<input id="run" class="btn" onclick="consoleLog()" type="button" value="RUN >"/>
         </div>
 
         <div class="col-12 render-console">
             <p>
                     <span class="green">valentinleymonie@DESKTOP-27ATGFH</span> <span class="purple">MINGW64</span> <span class="yellow">/C/VALENTIN/Portfolio</span> <span class="blue">(dev)</span> :<br/>
                     <br/>
-                <div class="render-terminal">
+                <div id="terminal" class="render-terminal">
                     
                 </div>
 
@@ -57,7 +58,7 @@
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/anim.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    </script>
 </body>
 </html>
