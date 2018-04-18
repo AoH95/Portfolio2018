@@ -8,18 +8,24 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="col-3 header-parent">
+    <header id="headerResp" class="col-3 header-parent float">
         <nav class="col-12">
-            <ul>
-                <li id="Skills" onclick="getId(this.textContent)" class="menu-li">Skills</li>
-                <li id="About" onclick="getId(this.textContent)" class="menu-li">About</li>
-                <li id="Projects" onclick="getId(this.textContent)" class="menu-li">Projects</li>
-                <li id="Contact" onclick="getId(this.textContent)" class="menu-li">Contact</li>
+            <ul id="menu-desktop">
+                <li id="skills" onclick="getId(this.textContent)" class="menu-li">Skills</li>
+                <li id="about" onclick="getId(this.textContent)" class="menu-li">About</li>
+                <li id="projects" onclick="getId(this.textContent)" class="menu-li">Projects</li>
+                <li id="contact" onclick="getId(this.textContent)" class="menu-li">Contact</li>
+            </ul>
+            <ul  id="menu-mobile">
+                <li id="skills" onclick="getId('Skills')" class="menu-li"><i class="fas fa-chart-pie"></i></li>
+                <li id="about" onclick="getId('About')" class="menu-li"><i class="fas fa-newspaper"></i></li>
+                <li id="projects" onclick="getId('Projects')" class="menu-li"><i class="fas fa-box-open"></i></li>
+                <li id="contact" onclick="getId('Contact')" class="menu-li"><i class="fas fa-phone"></i></li>
             </ul>
         </nav>
     </header>
-    <div class="col-3 header-child">l</div>
-    <div class="col-9 container-content">
+    <div id="headerResp-child" class="col-3 header-child float">l</div>
+    <div id="containerContent" class="col-9 container-content float">
 
         <div class="col-12 tuto">
            <h1>Welcome</h1>
@@ -57,6 +63,7 @@
         </div>
 
     </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/anim.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

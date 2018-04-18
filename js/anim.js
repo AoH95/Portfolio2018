@@ -20,8 +20,33 @@ function intervalAnim(){
         if(countLoop >= 3){
             clearInterval(interval);
         }
-    }, 200);
+    }, 400);
 }
+
+function resizeMenu(){
+    var widthWindow = window.innerWidth;
+    var headerParent = document.getElementById('headerResp');
+    var headerChild = document.getElementById('headerResp-child');
+    var containerContent = document.getElementById('containerContent');
+    var skills = document.getElementById('skills');
+    if (widthWindow < 600){
+        headerChild.classList.add('col-2');
+        headerParent.classList.add('col-2');
+        containerContent.classList.add('col-10');
+        headerParent.classList.remove('col-3');
+        headerChild.classList.remove('col-3');
+        containerContent.classList.remove('col-9');
+    }else{
+        headerParent.classList.add('col-3');
+        headerChild.classList.add('col-3');
+        containerContent.classList.add('col-9');
+        headerParent.classList.remove('col-2');
+        headerChild.classList.remove('col-2');
+        containerContent.classList.remove('col-10');
+    }
+}
+
+window.onresize = resizeMenu;
 
 document.onkeyup=function(e){
     e = e || window.event;
@@ -30,4 +55,6 @@ document.onkeyup=function(e){
         document.getElementById("run").click();
     }
 }
+
+
 

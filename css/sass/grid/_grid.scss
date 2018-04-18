@@ -11,8 +11,16 @@ $space:1%;
     clear:left;
 }
 
+.float{
+    float:left;
+}
+
 [class^="col-"]{
     float: left;
+}
+
+col-fix{
+    width: 50px;
 }
 
 @for $i from 1 through 12 {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,14 @@
 .line {
   clear: left; }
 
+.float {
+  float: left; }
+
 [class^="col-"] {
   float: left; }
+
+col-fix {
+  width: 50px; }
 
 .col-1 {
   width: 8.3333333333%; }
@@ -100,7 +107,8 @@ header.header-parent {
         margin: 2px 15px;
         padding: 5px 0;
         border: 1px solid #28282b;
-        transition: 0.3s; }
+        transition: 0.3s;
+        border-radius: 3px; }
         header.header-parent nav ul li:hover {
           border: 1px solid #FFFFFF;
           background-color: rgba(255, 255, 255, 0.5);
@@ -212,6 +220,37 @@ div.render-console {
 .roseTwig {
   color: #f92672; }
 
+@media screen and (min-width: 1280px) {
+  #menu-desktop {
+    display: block; }
+
+  #menu-mobile {
+    display: none; } }
+@media screen and (max-width: 600px) {
+  header.parent {
+    min-width: 46pximportant; }
+
+  #menu-desktop {
+    display: none; }
+
+  #menu-mobile {
+    display: block; }
+
+  input#inputText {
+    font-size: 10px !important;
+    width: 27% !important; } }
+/* Sur tous types d'├®cran, quand la largeur de la fen├¬tre est comprise entre 1024px et 1280px
+
+@media all and (min-width: 1024px) and (max-width: 1280px){
+
+}
+*/
+/* Sur tous types d'├®crans orient├®s verticalement 
+
+@media all and (orientation: portrait){
+
+}
+*/
 body {
   background-color: #8D8D8D; }
 

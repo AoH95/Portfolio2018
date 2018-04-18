@@ -18,6 +18,7 @@ header.header-parent{
                 padding: 5px 0;
                 border: 1px solid #28282b;
                 transition:0.3s;
+                border-radius:3px;
                 &:hover{
                     border: 1px solid $white;
                     background-color:rgba(255,255,255,0.5);
