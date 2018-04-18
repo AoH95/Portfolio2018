@@ -1,3 +1,11 @@
+function openProject(){
+    $('.project1').fadeIn(600);
+}
+
+function closeProject(){
+    $('.project1').fadeOut(600);
+}
+
 function getId(element){
  var keyword = element;
  console.log(keyword);

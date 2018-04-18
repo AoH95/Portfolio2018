@@ -1,6 +1,3 @@
-var parent = document.querySelector('.header-parent');
-var child = document.querySelector('.header-child');
-var parentW = parent.offsetWidth;
 /*
 window.addEventListener("resize", resizeHeaderChild);
 
@@ -32,7 +29,7 @@ function consoleLog(){
         case 'Project':
         case 'Projets':
         case 'Projet':
-        var contenu = "{<br/>Projects.json :{<br/><span class= 'tiret'>______</span><span class='blueJS2'>Project #1</span> :{<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'titre projet'</span>:<span class='orangeJS'>'Projet Hackathon'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'context'</span>:<span class='orangeJS'>'Projet réalisé pour un hackathon avec le réseau GES (ICAN)'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'tech'</span>:<span class='orangeJS'>'Laravel, TWIG, HTML, CSS, JS, Jquery'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'screen'</span>: <button class='btn'>CLICK HERE</button><br/><span class= 'tiret'>______</span>},<br/><span class= 'tiret'>______</span><span class='blueJS2'>Project #2</span> :{<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'titre projet'</span>:<span class='orangeJS'>'Projet Fédération Française de Roller Sports'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'context'</span>:<span class='orangeJS'>'Projet de premier semestre de 3ème année à l'ICAN à Paris (75)</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'tech'</span>:<span class='orangeJS'>'Symfony 4.0, TWIG, HTML, CSS/SASS, JS, Jquery, SQL'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'link'</span>: <a href='https://www.ffroller.valentin-leymonie.fr/'><button class='btn'>CLICK HERE</button></a><br/><span class= 'tiret'>______</span>},<br/><span class= 'tiret'>______</span><span class='blueJS2'>Project #3</span> :{<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'titre projet'</span>:<span class='orangeJS'>'Projet Bot ICAN'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'context'</span>:<span class='orangeJS'>'Projet de second semestre de 3ème année à l'ICAN à Paris (75)</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'><span class='blueJS2'>'tech'</span></span>:<span class='orangeJS'>'Symfony 4.0, ReactJS, TWIG, HTML, CSS/SASS, JS, Jquery'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'screen'</span>: <button class='btn'>CLICK HERE</button><br/><span class= 'tiret'>______</span>}<br/><span class= 'tiret'>___</span>}<br/>}<br/>";
+        var contenu = "{<br/>Projects.json :{<br/><span class= 'tiret'>______</span><span class='blueJS2'>Project #1</span> :{<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'titre projet'</span>:<span class='orangeJS'>'Projet Hackathon'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'context'</span>:<span class='orangeJS'>'Projet réalisé pour un hackathon avec le réseau GES (ICAN)'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'tech'</span>:<span class='orangeJS'>'Laravel, TWIG, HTML, CSS, JS, Jquery'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'screen'</span>: <button class='btn' onclick='openProject()'>CLICK HERE</button><br/><span class= 'tiret'>______</span>},<br/><span class= 'tiret'>______</span><span class='blueJS2'>Project #2</span> :{<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'titre projet'</span>:<span class='orangeJS'>'Projet Fédération Française de Roller Sports'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'context'</span>:<span class='orangeJS'>'Projet de premier semestre de 3ème année à l'ICAN à Paris (75)</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'tech'</span>:<span class='orangeJS'>'Symfony 4.0, TWIG, HTML, CSS/SASS, JS, Jquery, SQL'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'link'</span>: <a href='https://www.ffroller.valentin-leymonie.fr/'><button class='btn'>CLICK HERE</button></a><br/><span class= 'tiret'>______</span>},<br/><span class= 'tiret'>______</span><span class='blueJS2'>Project #3</span> :{<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'titre projet'</span>:<span class='orangeJS'>'Projet Bot ICAN'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'context'</span>:<span class='orangeJS'>'Projet de second semestre de 3ème année à l'ICAN à Paris (75)</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'><span class='blueJS2'>'tech'</span></span>:<span class='orangeJS'>'Symfony 4.0, ReactJS, TWIG, HTML, CSS/SASS, JS, Jquery'</span>,<br/><span class= 'tiret'>_________</span><span class='blueJS2'>'screen'</span>: <button class='btn' onclick='openProject('projet3')>CLICK HERE</button><br/><span class= 'tiret'>______</span>}<br/><span class= 'tiret'>___</span>}<br/>}<br/>";
         intervalAnim();
         waitAnim(contenu);
         break;
@@ -68,12 +65,14 @@ function consoleLog(){
                 console.log("erreur");
             },
         }); 
+        $(".hideIt").hide();
+        $('h1').text('Welcome on my website');
     }
 
     function waitAnim(contenu){
         var startTime = new Date().getTime();
         var interval = setInterval(function(){
-            if(new Date().getTime() - startTime > 4000){
+            if(new Date().getTime() - startTime > 3000){
                 clearInterval(interval);
                 return;
             }
