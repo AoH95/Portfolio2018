@@ -13,11 +13,11 @@
         min-width: 46pximportant;
     }
     #menu-desktop{
-        display:none;
+        display:none!important;
     }
 
     #menu-mobile{
-        display:block;
+        display:block!important;
     }
     input#inputText{
         font-size:10px!important;

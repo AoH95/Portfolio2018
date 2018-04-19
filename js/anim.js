@@ -64,5 +64,8 @@ document.onkeyup=function(e){
     }
 }
 
+$( document ).ready(function() {
+    resizeMenu();
+}
 
 
