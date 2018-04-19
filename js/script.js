@@ -44,7 +44,7 @@ function consoleLog(){
 
         case 'About':
         case 'A propos':
-        var contenu = "<span class= 'tiret'>______</span>- <span class='blueJS2'>echo</span> ('<span class='orangeJS'>Prochainement diplomé, actuellement en 3ème de licence Web Design à l'ICAN (Paris), je suis à la recherche d'une alternance dans le but de la préparation de mon Master Développement mobile & IoT à YNOV (Nanterre). Je suis à la recherche d'un poste dans le développement mobile ou en développeur Front-End.</span>');<br/>"
+        var contenu = "<span class= 'tiret'>______</span>- <span class='blueJS2'>echo</span> ('<span class='orangeJS'>Prochainement diplomé, actuellement en 3ème de licence Web Design à l'ICAN (Paris), je suis à la recherche d'une alternance dans le but de la préparation de mon Master Développement mobile & IoT à YNOV (Nanterre). Je souhaite intégrer un poste dans le développement mobile ou en développeur Front-End.</span>');<br/>"
         intervalAnim();
         waitAnim(contenu);
         break;
