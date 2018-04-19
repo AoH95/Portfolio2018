@@ -158,3 +158,10 @@ div.project1{
 .roseTwig{
     color:$roseTwig;
 }
+
+@media screen and (max-width: 600px){
+    img.project-img {
+        width: 75%!important;
+        margin: 5px 12%!important;
+    }
+}
