@@ -182,8 +182,8 @@ div.render-console {
 
 div.project1 {
   position: absolute;
-  top: 1%;
-  left: 1%;
+  top: 0%;
+  left: 0%;
   display: none; }
 
 .btn:hover {
@@ -205,11 +205,9 @@ button.close {
     transition: 0.3s; }
 
 div.project1 {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding-bottom: 3%; }
+  background-color: rgba(0, 0, 0, 0.7); }
   div.project1 img.project-img {
-    width: 600px;
-    margin: 5px 34%; }
+    width: 600px; }
 
 .green {
   color: #0dbc79; }

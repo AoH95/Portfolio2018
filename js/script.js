@@ -11,7 +11,7 @@ function consoleLog(){
     var mot = $('.inpt').val();
     String(mot);
     res = mot.charAt(0).toUpperCase() + mot.substr(1);
-    console.log(res);
+    //console.log(res);
 
     switch (res){
         case 'Skills':
@@ -62,7 +62,7 @@ function consoleLog(){
                 $(".render-terminal").html(contenu);
             },
             error : function(){
-                console.log("erreur");
+                //console.log("erreur");
             },
         }); 
         $(".hideIt").hide();

@@ -8,7 +8,7 @@ function closeProject(){
 
 function getId(element){
  var keyword = element;
- console.log(keyword);
+ //console.log(keyword);
     document.getElementById("inputText").value = keyword;
     
 }
