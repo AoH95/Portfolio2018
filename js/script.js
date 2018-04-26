@@ -6,7 +6,7 @@ function resizeHeaderChild(){
     child.style.width = parentW+'px';
     console.log(parentW);
 }*/
-
+ 
 function consoleLog(){
     var mot = $('.inpt').val();
     String(mot);
@@ -37,7 +37,7 @@ function consoleLog(){
         case 'Contact':
         case 'Contact me':
         case 'Find me':
-        var contenu = "{<span class='roseTwig'>% if</span> work <span class='roseTwig'>== true OR</span> question <span class='roseTwig'>== true</span>  <span class='roseTwig'>%</span>}<br/><span class= 'tiret'>______</span>{<span class='roseTwig'>% set</span> valentinMail <span class='roseTwig'>=</span> valentin.leymonie.es@gmail.com <span class='roseTwig'>%</span>}<br/><span class= 'tiret'>_________</span>{{ valentinMail }}<br/>{<span class='roseTwig'>% elseif %</span>}<br/><span class= 'tiret'>______</span>{{ It will be a pleasure to read you ! }}<br/>{<span class='roseTwig'>% endif %</span>}<br/>";
+        var contenu = "{<span class='roseTwig'>% if</span> work <span class='roseTwig'>== true OR</span> question <span class='roseTwig'>== true</span>  <span class='roseTwig'>%</span>}<br/><span class= 'tiret'>______</span>{<span class='roseTwig'>% set</span> valentinMail <span class='roseTwig'>=</span> <a class='mailto' href='mailto:valentin.leymonie.es@gmail.com'>valentin.leymonie.es@gmail.com</a> <span class='roseTwig'>%</span>}<br/><span class= 'tiret'>_________</span>{{ valentinMail }}<br/>{<span class='roseTwig'>% elseif %</span>}<br/><span class= 'tiret'>______</span>{{ It will be a pleasure to read you ! }}<br/>{<span class='roseTwig'>% endif %</span>}<br/>";
         intervalAnim();
         waitAnim(contenu);
         break;
